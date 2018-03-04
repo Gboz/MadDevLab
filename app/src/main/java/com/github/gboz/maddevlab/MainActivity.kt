@@ -14,10 +14,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btn_enter_menu.setOnClickListener({
-            /**
-             * TODO
-             * add new activity
-             */
+            val intent = Intent(this, TrialsActivity::class.java)
+            startActivity(intent)
         })
 
         btn_source_on_github.setOnClickListener({
