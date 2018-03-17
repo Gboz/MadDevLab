@@ -17,9 +17,9 @@ class TrialsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_trials)
 
-        btn_start_trial.setOnClickListener({
+        btn_start_trial.setOnClickListener{
             startActivity(Intent(this, DiceActivity::class.java))
-        })
+        }
 
         Log.d(TAG, "onCreate")
     }

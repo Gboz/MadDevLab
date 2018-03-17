@@ -15,13 +15,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        btn_enter_menu.setOnClickListener({
+        btn_enter_menu.setOnClickListener{
             startActivity(Intent(this, TrialsActivity::class.java))
-        })
+        }
 
-        btn_source_on_github.setOnClickListener({
+        btn_source_on_github.setOnClickListener{
             startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/Gboz/MadDevLab")));
-        })
+        }
 
         Log.d(TAG, "onCreate")
     }

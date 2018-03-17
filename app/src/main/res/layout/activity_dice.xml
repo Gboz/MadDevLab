@@ -7,26 +7,26 @@
     tools:context="com.github.gboz.maddevlab.trials.DiceActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_cube_one_first_player"
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_marginBottom="1dp"
         android:layout_marginStart="64dp"
         android:text="x"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/btn_cube_two_first_player"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_cube_two_first_player"
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_marginStart="96dp"
         android:text="x"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintBottom_toTopOf="@+id/btn_cube_three_first_player"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btn_cube_three_first_player"
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_marginBottom="128dp"
@@ -36,45 +36,45 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btn_cube_four_first_player"
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_marginBottom="96dp"
         android:text="x"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button3" />
+        app:layout_constraintStart_toEndOf="@+id/btn_cube_three_first_player" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btn_cube_five_first_player"
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_marginBottom="64dp"
         android:layout_marginStart="1dp"
         android:text="x"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button4" />
+        app:layout_constraintStart_toEndOf="@+id/btn_cube_four_first_player" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/btn_cube_one_second_player"
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_marginTop="64dp"
         android:text="x"
-        app:layout_constraintEnd_toStartOf="@+id/button7"
+        app:layout_constraintEnd_toStartOf="@+id/btn_cube_two_second_player"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/btn_cube_two_second_player"
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_marginEnd="1dp"
         android:layout_marginTop="96dp"
         android:text="x"
-        app:layout_constraintEnd_toStartOf="@+id/button8"
+        app:layout_constraintEnd_toStartOf="@+id/btn_cube_three_second_player"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/btn_cube_three_second_player"
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_marginEnd="128dp"
@@ -84,20 +84,58 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/btn_cube_four_second_player"
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_marginEnd="96dp"
         android:text="x"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button8" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_cube_three_second_player" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/btn_cube_five_second_player"
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_marginEnd="64dp"
         android:text="x"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button9" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_cube_four_second_player" />
+
+    <Button
+        android:id="@+id/btn_roll_first_player"
+        android:layout_width="128dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="96dp"
+        android:layout_marginStart="128dp"
+        android:text="rzut"
+        app:layout_constraintBottom_toTopOf="@+id/btn_cube_five_first_player"
+        app:layout_constraintStart_toEndOf="@+id/btn_cube_one_first_player" />
+
+    <Button
+        android:id="@+id/btn_pass_first_player"
+        android:layout_width="128dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="128dp"
+        android:text="pass"
+        app:layout_constraintBottom_toTopOf="@+id/btn_roll_first_player"
+        app:layout_constraintStart_toEndOf="@+id/btn_cube_one_first_player" />
+
+    <Button
+        android:id="@+id/btn_roll_second_player"
+        android:layout_width="128dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginTop="96dp"
+        android:text="rzut"
+        app:layout_constraintEnd_toStartOf="@+id/btn_cube_five_second_player"
+        app:layout_constraintTop_toBottomOf="@+id/btn_cube_one_second_player" />
+
+    <Button
+        android:id="@+id/btn_pass_second_player"
+        android:layout_width="128dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="128dp"
+        android:text="pass"
+        app:layout_constraintEnd_toStartOf="@+id/btn_cube_five_second_player"
+        app:layout_constraintTop_toBottomOf="@+id/btn_roll_second_player" />
 </android.support.constraint.ConstraintLayout>
